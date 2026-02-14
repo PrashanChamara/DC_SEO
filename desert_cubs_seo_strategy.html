@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desert Cubs SEO Strategy & Market Research</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Palette - Energetic & Professional */
+        :root {
+            --primary-blue: #1E3A8A; /* Deep Blue for Trust/Authority */
+            --vibrant-orange: #F97316; /* Energy/Action/Cricket Ball */
+            --accent-light: #EFF6FF; /* Light Blue background */
+            --text-dark: #1F2937;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--accent-light);
+            color: var(--text-dark);
+        }
+
+        .bg-primary { background-color: var(--primary-blue); }
+        .text-primary { color: var(--primary-blue); }
+        .bg-accent { background-color: var(--vibrant-orange); }
+        .text-accent { color: var(--vibrant-orange); }
+        .border-accent { border-color: var(--vibrant-orange); }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 500px;
+        }
+
+        /* Card Styling for Material Feel */
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Timeline/Flowchart Styles without SVG */
+        .step-connector {
+            width: 2px;
+            background-color: var(--primary-blue);
+            height: 40px;
+            margin: 0 auto;
+        }
+        
+        .nav-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    </style>
+    <!-- 
+        Palette Used: Energetic & Professional (Deep Blue & Vibrant Orange)
+        Summary of Source Material Analysis:
+        - Analyzed Desert Cubs (DCCA) PDF: Large scale (4000+ students), High Revenue ($1.63M), Key strengths in Tours, Tech, and Affiliations.
+        - Problem: Bad online ratings, poor search visibility despite physical success.
+        - Target Audience: Parents in Dubai/Sharjah seeking quality, safety, and pathways for kids.
+        - Strategy: Focus on 10 high-impact keywords, reputation management, and local SEO.
+    -->
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="nav-sticky border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-black text-primary">DESERT CUBS <span class="text-accent">SEO</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#landscape" class="text-gray-700 hover:text-accent font-medium">Market Landscape</a>
+                    <a href="#keywords" class="text-gray-700 hover:text-accent font-medium">10 Golden Keywords</a>
+                    <a href="#strategy" class="text-gray-700 hover:text-accent font-medium">Strategy Matrix</a>
+                    <a href="#reputation" class="text-gray-700 hover:text-accent font-medium">Reputation Rescue</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-primary text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Dominate the Field</h1>
+            <p class="text-xl md:text-2xl font-light text-gray-200 max-w-3xl mx-auto mb-10">
+                Turning "Desert Cubs" into the #1 Digital Authority for Cricket in Dubai.
+                <br>
+                <span class="text-accent font-bold mt-2 block">From Invisible Giant to Market Leader.</span>
+            </p>
+            <div class="inline-flex rounded-md shadow">
+                <a href="#keywords" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                    See the 10 Keywords
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">
+
+        <!-- Section 1: The Landscape (Why we need this) -->
+        <section id="landscape" class="scroll-mt-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">The "Invisible Giant" Problem</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Desert Cubs is a massive entity in the physical world: <strong>$1.6M+ Revenue</strong>, <strong>4000+ Students</strong>, and International Tours.
+                        However, in the digital world, we are losing ground. Parents searching online find competitors with better ratings and clearer SEO signals.
+                        <br><br>
+                        Currently, <strong>93% of online experiences begin with a search engine</strong>. If we aren't in the top 3 results for "Cricket Coaching Dubai", we simply don't exist to new parents.
+                    </p>
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-accent">
+                        <h3 class="font-bold text-lg text-gray-800">The "Bad Ratings" Barrier</h3>
+                        <p class="text-gray-600 mt-2">
+                            Even if we rank #1, a low star rating kills conversion. A parent sees a 3.5-star rating and thinks "unsafe" or "poor management". 
+                            <strong>SEO gets them to the door; Reputation invites them in.</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold text-center mb-4 text-gray-700">Digital Visibility vs. Physical Success</h3>
+                    <div class="chart-container">
+                        <canvas id="marketGapChart"></canvas>
+                    </div>
+                    <p class="text-sm text-center text-gray-500 mt-4">Comparing actual market share (students) vs. search visibility share.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: The Parent's Journey (Flow) -->
+        <section class="bg-white rounded-2xl shadow-xl p-8 md:p-12 overflow-hidden">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">The Digital Parent's Journey</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Understanding how a parent thinks is the key to selecting the right keywords. They move from "Awareness" to "Decision" quickly.</p>
+            </div>
+
+            <!-- Flowchart using Grid/Flex (No SVG) -->
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center z-10">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center text-3xl font-bold text-primary mb-4 shadow-sm border-2 border-white ring-4 ring-blue-50">1</div>
+                    <h4 class="font-bold text-lg">Trigger</h4>
+                    <p class="text-sm text-center text-gray-500 mt-2">"My kid needs activity" or "He loves cricket"</p>
+                </div>
+                <!-- Connector Desktop -->
+                <div class="hidden md:block absolute top-8 left-[10%] w-[20%] h-1 bg-gray-200 -z-0"></div>
+                
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center z-10">
+                    <div class="w-16 h-16 rounded-full bg-blue-200 flex items-center justify-center text-3xl font-bold text-primary mb-4 shadow-sm border-2 border-white ring-4 ring-blue-50">2</div>
+                    <h4 class="font-bold text-lg">Search</h4>
+                    <p class="text-sm text-center text-gray-500 mt-2">Googles "Cricket coaching Dubai"</p>
+                    <div class="mt-2 bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded font-mono">We need to be here</div>
+                </div>
+                <!-- Connector Desktop -->
+                <div class="hidden md:block absolute top-8 left-[30%] w-[20%] h-1 bg-gray-200 -z-0"></div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center z-10">
+                    <div class="w-16 h-16 rounded-full bg-blue-300 flex items-center justify-center text-3xl font-bold text-primary mb-4 shadow-sm border-2 border-white ring-4 ring-blue-50">3</div>
+                    <h4 class="font-bold text-lg">Evaluation</h4>
+                    <p class="text-sm text-center text-gray-500 mt-2">Checks Fees, Location, & <strong>Reviews</strong></p>
+                </div>
+                <!-- Connector Desktop -->
+                <div class="hidden md:block absolute top-8 left-[50%] w-[20%] h-1 bg-gray-200 -z-0"></div>
+
+                <!-- Step 4 -->
+                <div class="flex flex-col items-center z-10">
+                    <div class="w-16 h-16 rounded-full bg-orange-400 flex items-center justify-center text-3xl font-bold text-white mb-4 shadow-md border-2 border-white ring-4 ring-orange-100">4</div>
+                    <h4 class="font-bold text-lg">Visit</h4>
+                    <p class="text-sm text-center text-gray-500 mt-2">Visits Academy / Calls</p>
+                </div>
+                <!-- Connector Desktop -->
+                <div class="hidden md:block absolute top-8 left-[70%] w-[20%] h-1 bg-gray-200 -z-0"></div>
+
+                <!-- Step 5 -->
+                <div class="flex flex-col items-center z-10">
+                    <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-3xl font-bold text-white mb-4 shadow-lg border-2 border-white ring-4 ring-blue-100">5</div>
+                    <h4 class="font-bold text-lg">Enroll</h4>
+                    <p class="text-sm text-center text-gray-500 mt-2">Becomes a "Desert Cub"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: The 10 Keywords -->
+        <section id="keywords" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">The 10 Golden Keywords</h2>
+            <p class="text-center text-gray-600 mb-10 max-w-3xl mx-auto">
+                These keywords are selected based on <strong>Search Volume</strong>, <strong>User Intent</strong>, and <strong>Alignment with Desert Cubs' USPs</strong> (Tours, Scale, Tech).
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div class="card p-6 border-l-8 border-accent">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">1. "Best Cricket Academy in Dubai"</h3>
+                            <p class="text-sm text-gray-500 mt-1">Intent: High Comparison | Volume: High</p>
+                        </div>
+                        <span class="bg-blue-100 text-primary px-3 py-1 rounded-full text-xs font-bold">Top Priority</span>
+                    </div>
+                    <p class="mt-4 text-gray-700 text-sm">The "Holy Grail" of keywords. We must create a "Why we are the best" landing page featuring our Awards, ECB affiliation, and 4000+ student count.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card p-6 border-l-8 border-blue-600">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">2. "Junior Cricket Coaching Sharjah"</h3>
+                            <p class="text-sm text-gray-500 mt-1">Intent: Local / Convenience | Volume: Medium</p>
+                        </div>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-bold">Easy Win</span>
+                    </div>
+                    <p class="mt-4 text-gray-700 text-sm">Leveraging our <strong>Sharjah English School</strong> location. Dominate the local map pack in Sharjah where competition is lower than Dubai.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card p-6 border-l-8 border-blue-600">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">3. "Cricket Summer Camp Dubai 2026"</h3>
+                            <p class="text-sm text-gray-500 mt-1">Intent: Seasonal / Urgent | Volume: Seasonal Spike</p>
+                        </div>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-bold">High Conversion</span>
+                    </div>
+                    <p class="mt-4 text-gray-700 text-sm">Parents plan holidays early. Create a dedicated page for "Camps" that captures traffic 2-3 months before summer.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card p-6 border-l-8 border-accent">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">4. "Private Cricket Lessons UAE"</h3>
+                            <p class="text-sm text-gray-500 mt-1">Intent: Premium / Specific | Volume: Low</p>
+                        </div>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-bold">High Value</span>
+                    </div>
+                    <p class="mt-4 text-gray-700 text-sm">Addresses the "lack of attention" complaint. Highlight our 1-on-1 coaching with video analysis tools.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card p-6 border-l-8 border-blue-600">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">5. "Professional Cricket Training for Kids"</h3>
+                            <p class="text-sm text-gray-500 mt-1">Intent: Quality / Serious | Volume: Medium</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-700 text-sm">Focus on "Pathway to National Team". Showcase the "Legends of the Future" program and ECB affiliation.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="card p-6 border-l-8 border-blue-600">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">6. "International Cricket Tours for Juniors"</h3>
+                            <p class="text-sm text-gray-500 mt-1">Intent: Unique Experience | Volume: Niche</p>
+                        </div>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs font-bold">Unique USP</span>
+                    </div>
+                    <p class="mt-4 text-gray-700 text-sm">Nobody does tours like Desert Cubs (Lord's, Australia). This keyword separates us from small academies.</p>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="card p-6 border-l-8 border-blue-600">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">7. "Girls Cricket Academy Dubai"</h3>
+                            <p class="text-sm text-gray-500 mt-1">Intent: Specific Demographic | Volume: Growing</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-700 text-sm">A fast-growing market. Positioning as an inclusive academy captures a loyal and under-served segment.</p>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="card p-6 border-l-8 border-blue-600">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">8. "Affordable Cricket Coaching Dubai"</h3>
+                            <p class="text-sm text-gray-500 mt-1">Intent: Price Sensitivity | Volume: High</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-700 text-sm">Directly address "High Fees". We don't have to be "cheap", but we must justify value (Value for Money).</p>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="card p-6 border-l-8 border-blue-600">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">9. "Cricket Academy with Video Analysis"</h3>
+                            <p class="text-sm text-gray-500 mt-1">Intent: Tech / Advanced | Volume: Low</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-700 text-sm">Highlights our advanced facilities (Bowling machines/Video). Appeals to tech-savvy parents and serious players.</p>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="card p-6 border-l-8 border-accent">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">10. "Desert Cubs Reviews"</h3>
+                            <p class="text-sm text-gray-500 mt-1">Intent: Reputation Check | Volume: Branded</p>
+                        </div>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-bold">Critical Fix</span>
+                    </div>
+                    <p class="mt-4 text-gray-700 text-sm">We must rank #1 for our own name with POSITIVE content to push down negative third-party reviews.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Strategy Matrix Visualization -->
+        <section id="strategy" class="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Keyword Opportunity Matrix</h2>
+            <p class="text-center text-gray-600 mb-8">
+                Visualizing where we should focus our efforts. 
+                <span class="font-bold text-primary">Top Right</span> = High Volume & High Relevance.
+                <span class="font-bold text-accent">Top Left</span> = Easy Wins.
+            </p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="chart-container">
+                        <canvas id="keywordMatrix"></canvas>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center space-y-4">
+                    <div class="p-4 bg-white rounded shadow border-l-4 border-green-500">
+                        <h4 class="font-bold">Quick Wins</h4>
+                        <p class="text-sm text-gray-600">Keywords with lower competition but high intent. (e.g., "Summer Camp", "Private Lessons")</p>
+                    </div>
+                    <div class="p-4 bg-white rounded shadow border-l-4 border-accent">
+                        <h4 class="font-bold">Strategic Battles</h4>
+                        <p class="text-sm text-gray-600">High volume terms we must fight for over time. (e.g., "Best Cricket Academy")</p>
+                    </div>
+                    <div class="p-4 bg-white rounded shadow border-l-4 border-blue-800">
+                        <h4 class="font-bold">Brand Defense</h4>
+                        <p class="text-sm text-gray-600">Protecting our name from negative sentiment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Reputation & AI -->
+        <section id="reputation" class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Reputation -->
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="flex items-center mb-6">
+                    <div class="bg-red-100 p-3 rounded-full mr-4">
+                        <span class="text-2xl">⭐</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Reputation Rescue Plan</h3>
+                </div>
+                <p class="text-gray-600 mb-6">
+                    "Ratings are very bad" - This is a bleeding wound. No amount of keywords will fix conversion if the destination looks unsafe.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-green-500 font-bold mr-2">✓</span>
+                        <div>
+                            <strong class="text-gray-800">Review Gating Campaign:</strong> 
+                            Send automated emails to happy parents (e.g., after a tour or win) asking for a review.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 font-bold mr-2">✓</span>
+                        <div>
+                            <strong class="text-gray-800">Address the Negatives:</strong> 
+                            Reply to bad reviews professionally. "We are sorry... we have made changes." This shows we care.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 font-bold mr-2">✓</span>
+                        <div>
+                            <strong class="text-gray-800">Highlight "Parents Team":</strong> 
+                            Use the Parents Team (mentioned in PDF) to generate community-driven positive content.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- AI Search -->
+            <div class="bg-primary text-white rounded-xl shadow-lg p-8">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-700 p-3 rounded-full mr-4">
+                        <span class="text-2xl">🤖</span>
+                    </div>
+                    <h3 class="text-2xl font-bold">Winning in AI Search (Perplexity/ChatGPT)</h3>
+                </div>
+                <p class="text-gray-200 mb-6">
+                    Parents are now asking AI: "What is the best cricket academy for 10 year olds in Dubai?"
+                </p>
+                <div class="space-y-4">
+                    <div class="bg-blue-800 p-4 rounded-lg">
+                        <h4 class="font-bold text-accent mb-1">Action 1: FAQ Schema</h4>
+                        <p class="text-sm text-gray-300">Add a detailed FAQ section to the website. "What is the student-to-coach ratio?" "Do you have tours?" AI reads this structured data.</p>
+                    </div>
+                    <div class="bg-blue-800 p-4 rounded-lg">
+                        <h4 class="font-bold text-accent mb-1">Action 2: Topical Authority</h4>
+                        <p class="text-sm text-gray-300">Blog about "Cricket Nutrition", "Choosing a Bat", "Importance of Video Analysis". Establish DCCA as the <em>expert</em>, not just a facility.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-400">Prepared for Desert Cubs Cricket Academy</p>
+            <p class="text-sm text-gray-600 mt-2">Strategic Analysis & SEO Roadmap</p>
+        </div>
+    </footer>
+
+    <!-- Scripts for Charts -->
+    <script>
+        // Chart 1: The Gap (Bar Chart)
+        const ctxGap = document.getElementById('marketGapChart').getContext('2d');
+        
+        // Wrap labels helper function
+        function wrapLabels(label) {
+            if (label.length > 16) {
+                return label.split(' ');
+            }
+            return label;
+        }
+
+        const gapChart = new Chart(ctxGap, {
+            type: 'bar',
+            data: {
+                labels: ['Market Share (Students)', 'Search Visibility', 'Brand Reputation'],
+                datasets: [{
+                    label: 'Current Status',
+                    data: [85, 20, 35], // High physical share, low digital/rep
+                    backgroundColor: [
+                        '#1E3A8A', // Blue (Good)
+                        '#F97316', // Orange (Bad - needs work)
+                        '#DC2626'  // Red (Critical)
+                    ],
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) return label.join(' ');
+                                return label;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        title: { display: true, text: 'Performance Score (0-100)' }
+                    },
+                    x: {
+                        ticks: {
+                            callback: function(val, index) {
+                                return wrapLabels(this.getLabelForValue(val));
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Chart 2: Keyword Matrix (Bubble/Scatter)
+        // X = Search Volume, Y = User Intent (Conversion prob), Size = Competition (Inverse or Direct)
+        // Let's use Scatter for clarity with labeled points
+        const ctxMatrix = document.getElementById('keywordMatrix').getContext('2d');
+        
+        const keywordData = [
+            { x: 90, y: 80, r: 15, label: "Best Academy Dubai" }, // High Vol, High Intent
+            { x: 60, y: 90, r: 10, label: "Summer Camp" },      // Med Vol, Very High Intent
+            { x: 40, y: 85, r: 8, label: "Private Lessons" },   // Low Vol, High Intent
+            { x: 50, y: 60, r: 10, label: "Sharjah Coaching" }, // Med Vol, Med Intent
+            { x: 30, y: 95, r: 8, label: "Reviews" },           // Low Vol, Critical Intent
+            { x: 20, y: 70, r: 6, label: "Girls Cricket" },     // Niche
+            { x: 80, y: 50, r: 12, label: "Affordable Fees" },  // High Vol, Low Intent (browsing)
+        ];
+
+        const matrixChart = new Chart(ctxMatrix, {
+            type: 'bubble',
+            data: {
+                datasets: [{
+                    label: 'Keyword Opportunity',
+                    data: keywordData,
+                    backgroundColor: function(context) {
+                        const val = context.raw?.y;
+                        return val > 80 ? '#F97316' : '#1E3A8A'; // Orange for High Intent
+                    }
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.raw.label + ` (Vol: ${context.raw.x}, Intent: ${context.raw.y})`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        title: { display: true, text: 'Search Volume (Traffic Potential)' },
+                        min: 0,
+                        max: 100
+                    },
+                    y: {
+                        title: { display: true, text: 'Search Intent (Conversion Probability)' },
+                        min: 0,
+                        max: 100
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
